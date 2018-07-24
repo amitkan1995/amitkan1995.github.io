@@ -280,7 +280,7 @@ a:hover, a:active, a:focus {
 }
 
 .about-image-thumb img {
-  border-radius: 50%;
+  border-radius: 20%;
   margin-bottom: 22px;
 }
 
@@ -294,6 +294,12 @@ a:hover, a:active, a:focus {
 
 .about-thumb p {
   padding: 2px 0;
+  font-size: 18px;
+}
+.about-thumb h4 {
+  padding: 2px 0;
+  font-size: 22px;
+  color: #853d3d;
 }
 
 
@@ -315,14 +321,15 @@ a:hover, a:active, a:focus {
 }
 
 .work-thumb h2 {
-  font-size: 25px;
+  font-size: 30px;
+  padding-block-end: 10px;
 }
   
 .work-thumb-overlay {
   position: absolute;
   background: #7d89da;
   border-radius: 5px;
-  cursor: crosshair;
+  cursor: auto;
   opacity: 0;
   width: 100%;
   height: 100%;
