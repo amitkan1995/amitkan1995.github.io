@@ -255,7 +255,7 @@ a:hover, a:active, a:focus {
   background: #ffffff;
   border-radius: 5px;
   padding: 42px 22px;
-  cursor: crosshair;
+  cursor: auto;
   position: relative;
   top: 0;
   -webkit-transition: all ease-in-out 0.4s;
@@ -274,14 +274,31 @@ a:hover, a:active, a:focus {
 
 .service-thumb h4 {
   padding-bottom: 5px;
+  font-size: 20px;
 }
 
 .service-thumb .fa {
   color: #7682cc;
-  font-size: 62px;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.git {
+  color: #7682cc;
+  font-size: 80px;
   text-align: center;
   margin-top: 32px;
   margin-bottom: 22px;
+  transform: scale(0.8)
+}
+.git .fa:hover
+{
+  transform: scale(1.2);
+  top: -5px;
+}
+.service-thumb p{
+  font-size: 18px
 }
 
 .bg-grey .fa {
