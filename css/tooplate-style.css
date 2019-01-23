@@ -161,14 +161,14 @@ a:hover, a:active, a:focus {
   padding-bottom: 32px;
 }
 
-#service, #about, #work,
+#service, #about, #education,
 #contact, footer {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-#service, #work {
+#service, #education {
   background: #e9e8e8;
   text-align: center;
 }
@@ -338,14 +338,11 @@ a:hover, a:active, a:focus {
   color: #853d3d;
 }
 
-
-
 /*---------------------------------------
-  Work section              
+  WORK section              
 -----------------------------------------*/
-
 .work-thumb {
-  margin: 12px 0 12px 0;
+  margin: 52px 0 52px 0;
   padding: 0;
   overflow: hidden;
   position: relative;
@@ -356,11 +353,56 @@ a:hover, a:active, a:focus {
   border-radius: 10px;
 }
 
-.work-thumb h2 {
+.work-thumb h3 {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.work-thumb h4 {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.work-thumb-overlay {
+  position: absolute;
+  background: #bf80f1;
+  border-radius: 10px;
+  cursor: auto;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 95px 42px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.work-thumb:hover .work-thumb-overlay {
+  opacity: 1;
+}
+
+
+
+/*---------------------------------------
+  education section              
+-----------------------------------------*/
+
+.education-thumb {
+  margin: 12px 0 12px 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+
+.education-thumb img {
+  border-radius: 10px;
+}
+
+.education-thumb h2 {
   font-size: 25px;
 }
   
-.work-thumb-overlay {
+.education-thumb-overlay {
   position: absolute;
   background: #7d89da;
   border-radius: 10px;
@@ -373,7 +415,7 @@ a:hover, a:active, a:focus {
   transition: all ease-in-out 0.4s;
 }
 
-.work-thumb:hover .work-thumb-overlay {
+.education-thumb:hover .education-thumb-overlay {
   opacity: 1;
 }
 
@@ -496,7 +538,7 @@ footer p {
     margin-bottom: 22px;
   }
   
-  .work-thumb-overlay{
+  .education-thumb-overlay{
     padding: 40px 10px 10px 20px;
   }
 
