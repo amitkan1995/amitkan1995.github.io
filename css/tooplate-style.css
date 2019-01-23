@@ -161,14 +161,14 @@ a:hover, a:active, a:focus {
   padding-bottom: 32px;
 }
 
-#service, #about, #education,
+#service, #about, #education, #work,
 #contact, footer {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-#service, #education {
+#service, #education, #work {
   background: #e9e8e8;
   text-align: center;
 }
@@ -538,6 +538,10 @@ footer p {
     margin-bottom: 22px;
   }
   
+  .work-thumb-overlay{
+    padding: 40px 10px 10px 20px;
+  }
+
   .education-thumb-overlay{
     padding: 40px 10px 10px 20px;
   }
