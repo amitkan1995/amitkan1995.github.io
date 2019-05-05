@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   color: #ffffff;
-  font-size: 45px;
+  font-size: 58px;
   line-height: normal;
 }
 
@@ -76,7 +76,7 @@ p {
 -----------------------------------------*/
 
 .section-btn {
-  background: #000000;
+  background: #313131;
   border: none;
   border-radius: 50px;
   color: #f0f0f0;
@@ -92,8 +92,28 @@ p {
 
 .section-btn:focus,
 .section-btn:hover {
-  background: #ffffff;
+  background: #d6d6d6;
   color: #000000;
+}
+
+.blog-btn {
+  background: #2fc4ff;
+  border: none;
+  border-radius: 50px;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 18px 32px;
+  margin-top: 42px;
+  text-transform: uppercase;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+.blog-btn:focus,
+.blog-btn:hover {
+  background: #ff36f5;
+  color: #fffefe;
 }
 
 .resume-btn {
@@ -331,11 +351,17 @@ a:hover, a:active, a:focus {
 .about-thumb p {
   padding: 2px 0;
   font-size: 18px;
+  color: #6b0042
+}
+.about-thumb h3 {
+  padding: 2px 0;
+  font-size: 24px;
+  color: #021757;
 }
 .about-thumb h4 {
   padding: 2px 0;
-  font-size: 22px;
-  color: #853d3d;
+  font-size: 20px;
+  color: #087b97;
 }
 
 /*---------------------------------------
