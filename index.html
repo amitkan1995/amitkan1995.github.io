@@ -20,8 +20,9 @@
 <link rel="stylesheet" href="css/tooplate-style.css">
 
 </head>
-<body>
+<body onload="calculate_months()">
 
+          
 <!-- PRE LOADER -->
 <div class="preloader">
      <div class="spinner">
@@ -39,7 +40,8 @@
                     
                <div class="col-md-offset-5 col-md-7 col-sm-12">
                     <div class="home-thumb">
-                         <h1 class="wow fadeInUp" data-wow-delay="0.4s">Hey , Amit here</h1>
+                         <h2 class="wow fadeInUp " data-wow-delay="0.4s">Hello, नमस्ते, Kon'nichiwa</h2>
+                         <h2 class="wow fadeInUp " data-wow-delay="0.4s">Amit Here</h2>
                          <h2 class="wow fadeInUp white-color" data-wow-delay="0.6s">Learning Machine Learning</h2>
                         <!-- <p class="wow fadeInUp white-color" data-wow-delay="0.6s">Learning to Code.</p> -->
                         <a href="http://amitkan1995.github.io/blog/" class="wow fadeInUp smoothScroll btn btn-default blog-btn" data-wow-delay="0.5 s"> Blog</a> &nbsp; 
@@ -197,11 +199,15 @@
                     <div class="work-thumb">
                               <div class="work-thumb-overlay">
                                    <h3 class="white-color">NEC Technologies</h3>
-                                   <h3 class="white-color">Sector-135,Noida</h3>
-                                   <h3> &nbsp;</h3>
-                                   <h4>Internship Trainee </h4>
-                                   <h4>(Jan-2019 To Present)</h4>
-                                   <h4> &nbsp -in Machine Learning and NLP </h4>
+                                   <h4 class="white-color">Noida</h4>
+                                   <h4>&nbsp</h4>
+                                   <h4 class="white-color">Internship Trainee </h4>
+                                   <h4>[Jan-2019 To Jul-2019] — 6.5 Months</h4> 
+                                   <h4>&nbsp</h4>
+                                   <h4 class="white-color">Graduate Engineer Trainee </h4>
+                                   <h4 id="perm_months">[Aug-2019 To Present] — </h4>
+                                   
+                                   <h4> &nbsp - in Machine Learning and NLP </h4>
                               </div>
                               <img src="images/work1.jpeg" class="img-responsive" alt="work 1">
                         
@@ -345,6 +351,17 @@
 <script src="js/magnific-popup-options.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-
+<script> 
+     function calculate_months() {
+          var d = new Date();
+          var months = d.getMonth();
+          months = months - 6
+          str = ' Month'
+          if (months >  1) {
+               str = ' Months'
+          }
+          document.getElementById("perm_months").append(months + str)     
+     }
+</script>
 </body>
 </html>
