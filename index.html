@@ -351,16 +351,11 @@
 <script src="js/magnific-popup-options.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/moment.min.js"></script>
 <script> 
      function calculate_months() {
-          var d = new Date();
-          var months = d.getMonth();
-          months = months - 6
-          str = ' Month'
-          if (months >  1) {
-               str = ' Months'
-          }
-          document.getElementById("perm_months").append(months + str)     
+          var duration = moment("20190801", "YYYYMMDD").fromNow(true);
+          document.getElementById("perm_months").append(duration)     
      }
 </script>
 </body>
